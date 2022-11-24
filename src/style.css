@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@screen mobile {
+  body {
+    @apply bg-[url('/assets/bg-main-mobile.png')]
+  }
+}
+
+@screen tablet {
+  body {
+    @apply bg-[url('/assets/bg-main-tablet.png')]
+  }
+}
+
+@screen desktop {
+  body {
+    @apply bg-[url('/assets/bg-main-desktop.png')]
+  }
+}
+
+body {
+  @apply bg-cover;
+}
