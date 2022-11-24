@@ -8,10 +8,15 @@ import AppDownloadButton from '@/components/AppDownloadButton.vue'
 
 <template>
   <div>
-    <header class="pt-10 mx-6">
+    <header class="pt-10 mx-6 relative">
       <img
         src="@/assets/logo.svg"
         alt="equalizer"
+      />
+      <img
+        src="@/assets/bg-pattern-1.svg"
+        alt="pattern"
+        class="hidden tablet:block absolute top-0 right-0 scale-75 origin-top-right transform translate-x-12 -translate-y-8"
       />
     </header>
     <main class="pt-12">
@@ -22,20 +27,20 @@ import AppDownloadButton from '@/components/AppDownloadButton.vue'
         <div
           role="heading"
           aria-level="1"
-          class="text-heading-2"
+          class="text-heading-2 tablet:w-2/3"
         >
           We make your music sound extraordinary.
         </div>
-        <p class="text-body-2 pt-5">
+        <p class="text-body-2 pt-5 tablet:w-2/3 tablet:text-body-1">
           A system audio equalizer specifically designed for Android and iOS. Freely tune the way your music sounds with
           a professional grade parametric EQ & volume mixer. Control bass, mids, treble, gain control, reverb, and more!
         </p>
       </div>
       <div
         id="illustrations"
-        class="relative py-44"
+        class="relative py-44 tablet:mx-6 tablet:pt-56"
       >
-        <div class="bg-blackish w-full rounded-2xl">
+        <div class="bg-blackish w-full rounded-2xl tablet:h-[37rem]">
           <img
             src="@/assets/bg-pattern-2.svg"
             alt=""
@@ -45,9 +50,9 @@ import AppDownloadButton from '@/components/AppDownloadButton.vue'
         <img
           src="@/assets/illustration-app.png"
           alt=""
-          class="absolute top-16 scale-63 origin-top"
+          class="absolute top-16 scale-mobile tablet:scale-tablet tablet:-translate-x-[4rem] tablet:top-20 origin-top"
         >
-        <div class="absolute bg-secondary w-full rounded-2xl px-6 flex py-10 flex-col space-y-6 -mt-8">
+        <div class="absolute bg-secondary w-full rounded-2xl px-6 flex py-10 flex-col space-y-6 transform -translate-y-12 tablet:w-[25rem] tablet:-translate-y-[26rem] tablet:translate-x-[19.5rem]">
           <div
             role="heading"
             aria-level="2"
@@ -70,7 +75,7 @@ import AppDownloadButton from '@/components/AppDownloadButton.vue'
         </div>
       </div>
     </main>
-    <footer class="mx-6 mt-[22rem] mb-[6rem] md:w-1/2">
+    <footer class="mx-6 mt-[22rem] mb-[6rem]">
       <div class="pb-8">
         <img
           src="@/assets/logo.svg"
