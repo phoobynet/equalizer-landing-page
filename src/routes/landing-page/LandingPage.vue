@@ -2,16 +2,17 @@
   lang="ts"
   setup
 >
-import AppDownloadButton from '../../components/AppDownloadButton.vue'
+import AppDownloadButton from '@/components/AppDownloadButton.vue'
+
 </script>
 
 <template>
   <div>
     <header class="pt-10 mx-6">
       <img
-        src="/assets/logo.svg"
-        alt=""
-      >
+        src="@/assets/logo.svg"
+        alt="equalizer"
+      />
     </header>
     <main class="pt-12">
       <div
@@ -36,13 +37,13 @@ import AppDownloadButton from '../../components/AppDownloadButton.vue'
       >
         <div class="bg-blackish w-full rounded-2xl">
           <img
-            src="/assets/bg-pattern-2.svg"
+            src="@/assets/bg-pattern-2.svg"
             alt=""
             class="object-contain mx-auto"
           >
         </div>
         <img
-          src="/assets/illustration-app.png"
+          src="@/assets/illustration-app.png"
           alt=""
           class="absolute top-16 scale-63 origin-top"
         >
@@ -60,7 +61,7 @@ import AppDownloadButton from '../../components/AppDownloadButton.vue'
           </p>
           <div class="flex space-x-3 items-center">
             <div class="text-whitish text-price">$4</div>
-            <div class="text-whitish text-body-2">/ month</div>
+            <div class="text-whitish text-body-1">/ month</div>
           </div>
           <div class="flex flex-col space-y-3">
             <app-download-button variant="ios" />
@@ -69,26 +70,27 @@ import AppDownloadButton from '../../components/AppDownloadButton.vue'
         </div>
       </div>
     </main>
-    <footer class="mx-6 mt-[22rem] mb-[6rem]">
-      <img
-        src="/assets/logo.svg"
-        alt=""
-        class="pb-8"
-      >
+    <footer class="mx-6 mt-[22rem] mb-[6rem] md:w-1/2">
+      <div class="pb-8">
+        <img
+          src="@/assets/logo.svg"
+          alt="equalizer"
+        />
+      </div>
       <p class="text-body-2">All rights reserved © Equalizer 2021</p>
       <p class="text-body-2"> Have any problems? Contact us via social media or email us at <strong>equalizer@example.com</strong>
       </p>
       <div class="flex justify-start space-x-4 pt-12">
         <img
-          src="/assets/icon-facebook.svg"
+          src="@/assets/icon-facebook.svg"
           alt="facebook"
         >
         <img
-          src="/assets/icon-instagram.svg"
+          src="@/assets/icon-instagram.svg"
           alt="instagram"
         >
         <img
-          src="/assets/icon-twitter.svg"
+          src="@/assets/icon-twitter.svg"
           alt="twitter"
         >
       </div>

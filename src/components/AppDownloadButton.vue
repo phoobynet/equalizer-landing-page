@@ -3,8 +3,8 @@
   setup
 >
 import { computed } from 'vue'
-import iconAndroid from '../assets/icon-android.svg'
-import iconIOS from '../assets/icon-apple.svg'
+import iconAndroid from '@/assets/icon-android.svg'
+import iconIOS from '@/assets/icon-apple.svg'
 
 interface Props {
   variant: 'ios' | 'android'
@@ -12,21 +12,15 @@ interface Props {
 
 const props = defineProps<Props>()
 
-const buttonText = computed(() => {
-  if (props.variant === 'ios') {
-    return 'iOS Download'
-  } else {
-    return 'Android Download'
-  }
-})
+const buttonText = computed(() =>
+  props.variant === 'ios'
+    ? 'iOS Download'
+    : 'Android Download')
 
-const iconUrl = computed(() => {
-  if (props.variant === 'ios') {
-    return iconIOS
-  } else {
-    return iconAndroid
-  }
-})
+const iconUrl = computed(() =>
+  props.variant === 'ios'
+    ? iconIOS
+    : iconAndroid)
 
 </script>
 
