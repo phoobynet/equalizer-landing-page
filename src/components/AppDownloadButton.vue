@@ -24,17 +24,10 @@ const iconUrl = computed(() =>
 
 </script>
 
-<template>
-  <button
-    class="btn"
-    :class="props.variant"
-  >
-    <img
-      :src="iconUrl"
-      alt=""
-    >
-    <span class="text-button">{{ buttonText }}</span>
-  </button>
+<template lang="pug">
+button.btn(:class="props.variant")
+  img(:src="iconUrl" alt="icon")
+  span.text-button {{ buttonText }}
 </template>
 
 <style
