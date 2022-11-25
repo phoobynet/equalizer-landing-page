@@ -1,7 +1,12 @@
+<script lang="ts" setup>
+import bgPattern1Url from '@/assets/bg-pattern-1.svg'
+import Logo from '@/components/Logo.vue'
+</script>
+
 <template lang="pug">
 header#landing-page-header
-  img(src='@/assets/logo.svg', alt='equalizer')
-  img.bg-pattern(src='@/assets/bg-pattern-1.svg', alt='pattern')
+  logo
+  img.bg-pattern(:src='bgPattern1Url', alt='pattern')
 </template>
 
 <style lang="scss" scoped>
@@ -9,7 +14,7 @@ header#landing-page-header
   @apply relative mx-6 pt-10;
 
   .bg-pattern {
-    @apply absolute top-0 right-0 hidden origin-top-right translate-x-12 -translate-y-8 scale-75 transform tablet:block;
+    @apply absolute top-[-2.6rem] right-[-4rem] hidden origin-top-right scale-[.85] tablet:block;
   }
 }
 </style>

@@ -5,7 +5,7 @@ import illustrationAppUrl from '@/assets/illustration-app.png'
 </script>
 
 <template lang="pug">
-#illustrations
+#landing-page-main-illustrations
   .bg-pattern-container
     img.bg-pattern(:src='bgPattern2Url', alt='pattern')
   img.app(:src='illustrationAppUrl', alt='app')
@@ -14,7 +14,7 @@ import illustrationAppUrl from '@/assets/illustration-app.png'
 </template>
 
 <style lang="scss" scoped>
-#illustrations {
+#landing-page-main-illustrations {
   @apply relative py-44 tablet:mx-6 tablet:pt-56;
 
   .bg-pattern-container {
@@ -26,7 +26,7 @@ import illustrationAppUrl from '@/assets/illustration-app.png'
   }
 
   img.app {
-    @apply absolute top-16 origin-top scale-mobile tablet:top-20 tablet:-translate-x-[4rem] tablet:scale-tablet;
+    @apply scale-mobile tablet:scale-tablet absolute top-16 origin-top tablet:top-20 tablet:-translate-x-[4rem];
   }
 
   .app-download-cta-container {

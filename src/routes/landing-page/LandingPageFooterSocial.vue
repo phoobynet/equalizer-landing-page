@@ -5,14 +5,14 @@ import twitterUrl from '@/assets/icon-twitter.svg'
 </script>
 
 <template lang="pug">
-#social
+#landing-page-footer-social
   img(:src='facebookUrl', alt='Facebook')
   img(:src='instagramUrl', alt='Instagram')
   img(:src='twitterUrl', alt='Twitter')
 </template>
 
 <style lang="scss" scoped>
-#social {
+#landing-page-footer-social {
   @apply flex justify-start space-x-4 pt-12;
 }
 </style>

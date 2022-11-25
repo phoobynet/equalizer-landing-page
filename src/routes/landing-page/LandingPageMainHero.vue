@@ -1,12 +1,12 @@
 <template lang="pug">
-#hero
+#landing-page-main-hero
   h1 We make your music sound extraordinary.
   p A system audio equalizer specifically designed for Android and iOS. Freely tune the way your music sounds with
     | professional grade parametric EQ & volume mixer. Control bass, mids, treble, gain control, reverb, and more!
 </template>
 
 <style lang="scss" scoped>
-#hero {
+#landing-page-main-hero {
   @apply mx-6;
 
   h1 {
