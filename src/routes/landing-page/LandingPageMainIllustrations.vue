@@ -26,7 +26,7 @@ import illustrationAppUrl from '@/assets/illustration-app.png'
   }
 
   img.app {
-    @apply scale-mobile tablet:scale-tablet absolute top-16 origin-top tablet:top-20 tablet:-translate-x-[4rem];
+    @apply absolute top-16 origin-top mobile:scale-[.63] tablet:top-20 tablet:left-[-6.5rem] tablet:scale-[.45];
   }
 
   .app-download-cta-container {
