@@ -15,6 +15,6 @@ import Logo from '@/components/Logo.vue'
 
 <style lang="scss" scoped>
 #landing-page-footer {
-  @apply mx-6 mt-[22rem] mb-[6rem];
+  @apply mx-6;
 }
 </style>

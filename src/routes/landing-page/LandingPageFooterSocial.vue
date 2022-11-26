@@ -13,6 +13,6 @@ import twitterUrl from '@/assets/icon-twitter.svg'
 
 <style lang="scss" scoped>
 #landing-page-footer-social {
-  @apply flex justify-start space-x-4 pt-12;
+  @apply mt-16 flex justify-start space-x-5;
 }
 </style>

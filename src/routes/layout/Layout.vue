@@ -1,22 +1,29 @@
 <script lang="ts" setup>
-import illustrationAppUrl from '@/assets/illustration-app.png'
 import AppDownloadButton from '@/components/AppDownloadButton.vue'
 </script>
 
 <template lang="pug">
+#hero
+  h1 We make your music sound extraordinary.
+  p A system audio equalizer specifically designed for Android and iOS. Freely tune the way your music sounds with
+    | {{ ' ' }} a professional grade parametric EQ & volume mixer. Control bass, mids, treble, gain control, reverb, and more!
+
 #illustrations
   .background-item
   img.illustration-app(
-    :src='illustrationAppUrl',
+    src='/assets/illustration-app.png',
     alt='application screen shot'
   )
   .app-download-cta
-    h2 Premium EQ
-    p.text-whitish.text-body-2
+    h2(style='letter-spacing: 0.08px') Premium EQ
+    p.text-whitish.font-normal(
+      class='text-[18px] leading-[28px]',
+      style='padding-top: 9px; letter-spacing: 0px'
+    )
       | Get expert-level control with a robust equalizer, volume mixer, and spatial audio.
       | Take your listening experience to a whole new level and access all our incredible features!
     .price-container
-      .text-whitish.text-price $4
+      .text-whitish.font-bold(class='text-[65px] leading-[52px] tracking-[0px]') $4
       .text-whitish.text-body-1 / month
     .button-container
       app-download-button(variant='ios')
@@ -24,8 +31,20 @@ import AppDownloadButton from '@/components/AppDownloadButton.vue'
 </template>
 
 <style lang="scss" scoped>
+#hero {
+  @apply mx-6;
+
+  h1 {
+    @apply text-heading-2 tablet:w-2/3;
+  }
+
+  p {
+    @apply pt-5 text-body-2 tablet:w-2/3 tablet:text-body-1;
+  }
+}
+
 #illustrations {
-  @apply mt-20 grid grid-cols-1 grid-rows-3;
+  @apply grid h-[600px] grid-cols-1 grid-rows-3 pt-[4rem];
 
   .background-item {
     @apply col-start-1 col-end-1 row-start-1 row-end-2 h-[37.5rem] bg-blackish bg-[length:280px_420px] bg-top bg-no-repeat;
@@ -37,18 +56,18 @@ import AppDownloadButton from '@/components/AppDownloadButton.vue'
   }
 
   .app-download-cta {
-    @apply relative top-[-13.5rem] col-start-1 col-end-2 row-start-2 row-end-3 flex h-[34.125rem] flex-col space-y-6 justify-self-center rounded-2xl bg-secondary px-6 py-10;
+    @apply relative top-[13rem] col-start-1 col-end-2 row-start-2 row-end-3 h-[34.125rem] justify-self-center rounded-xl bg-secondary px-[36px] pt-[2.7rem];
 
     h2 {
-      @apply text-heading-2 text-whitish;
+      @apply text-[2rem] font-bold tracking-[0px] text-whitish;
     }
 
     .price-container {
-      @apply flex items-center space-x-3;
+      @apply mt-9 flex items-center space-x-4 pl-[6px];
     }
 
     .button-container {
-      @apply flex flex-col space-y-3;
+      @apply mt-8 ml-1.5 flex flex-col space-y-[1rem];
     }
   }
 }

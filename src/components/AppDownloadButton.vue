@@ -21,12 +21,12 @@ const iconUrl = computed(() =>
 <template lang="pug">
 button.btn(:class='props.variant', type='button')
   img(:src='iconUrl', alt='icon')
-  span.text-button {{ buttonText }}
+  span.font-bold(class='text-[18px] mt-[2px]') {{ buttonText }}
 </template>
 
 <style lang="scss" scoped>
 .btn {
-  @apply flex h-16 w-full items-center justify-center space-x-2 rounded-2xl;
+  @apply flex h-[61px] w-full items-center justify-center space-x-2 rounded-xl;
 
   &.ios {
     @apply bg-blackish text-whitish hover:bg-primary;

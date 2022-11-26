@@ -22,5 +22,8 @@ import LandingPageHeader from '@/routes/landing-page/LandingPageHeader.vue'
   main {
     @apply mt-16;
   }
+  footer {
+    @apply mt-[28.4rem];
+  }
 }
 </style>
