@@ -4,7 +4,7 @@ import Logo from '@/components/Logo.vue'
 </script>
 
 <template lang="pug">
-footer#landing-page-footer
+#landing-page-footer
   .mb-8
     logo
   p.text-body-2 All rights reserved © Equalizer 2021

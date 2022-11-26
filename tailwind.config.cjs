@@ -20,15 +20,17 @@ module.exports = {
         '5.5rem',
         {
           lineHeight: '5.5rem',
-          letterSpacing: '-0.063rem',
+          letterSpacing: '-0.028125rem',
           fontWeight: 700,
         },
       ],
       'heading-2': [
         '2.5rem',
         {
-          lineHeight: '3.25rem',
+          lineHeight: '3rem',
           fontWeight: 700,
+          letterSpacing: '-0.032rem',
+          paragraphSpacing: '0.0625rem',
         },
       ],
       'body-1': [

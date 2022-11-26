@@ -1,23 +1,26 @@
 <script lang="ts" setup>
-import LandingPageHeader from '@/routes/landing-page/LandingPageHeader.vue'
-import LandingPageMainHero from '@/routes/landing-page/LandingPageMainHero.vue'
 import LandingPageFooter from '@/routes/landing-page/LandingPageFooter.vue'
-import LandingPageMainIllustrations from '@/routes/landing-page/LandingPageMainIllustrations.vue'
+import LandingPageHero from '@/routes/landing-page/LandingPageHero.vue'
+import LandingPageHeader from '@/routes/landing-page/LandingPageHeader.vue'
 </script>
 
 <template lang="pug">
 #landing-page
-  landing-page-header
+  header
+    landing-page-header
   main
-    landing-page-main-hero
-    landing-page-main-illustrations
-  landing-page-footer
+    landing-page-hero
+  footer
+    landing-page-footer
 </template>
 
 <style lang="scss" scoped>
 #landing-page {
+  header {
+    @apply mt-10;
+  }
   main {
-    @apply mt-12;
+    @apply mt-16;
   }
 }
 </style>

@@ -13,5 +13,10 @@ export const router = createRouter({
       component: () => import('./demo/Demo.vue'),
       name: 'Demo',
     },
+    {
+      path: '/layout',
+      component: () => import('./layout/Layout.vue'),
+      name: 'Layout',
+    },
   ],
 })
