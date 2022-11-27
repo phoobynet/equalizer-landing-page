@@ -4,14 +4,15 @@ import Logo from '@/components/Logo.vue'
 </script>
 
 <template lang="pug">
-#landing-page-header
+.header
   logo
   img.bg-pattern(:src='bgPattern1Url', alt='pattern')
 </template>
 
 <style lang="scss" scoped>
-#landing-page-header {
-  @apply mx-6;
+.header {
+  @apply mx-6 pt-10;
+
   .bg-pattern {
     @apply absolute top-[-2.6rem] right-[-4rem] hidden origin-top-right scale-[.85] tablet:block;
   }

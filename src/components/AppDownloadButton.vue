@@ -19,14 +19,18 @@ const iconUrl = computed(() =>
 </script>
 
 <template lang="pug">
-button.btn(:class='props.variant', type='button')
+button(:class='props.variant', type='button')
   img(:src='iconUrl', alt='icon')
-  span.font-bold(class='text-[18px] mt-[2px]') {{ buttonText }}
+  span {{ buttonText }}
 </template>
 
 <style lang="scss" scoped>
-.btn {
+button {
   @apply flex h-[61px] w-full items-center justify-center space-x-2 rounded-xl;
+
+  span {
+    @apply mt-[2px] text-[18px] font-bold;
+  }
 
   &.ios {
     @apply bg-blackish text-whitish hover:bg-primary;

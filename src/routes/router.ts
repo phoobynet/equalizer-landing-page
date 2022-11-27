@@ -5,17 +5,17 @@ export const router = createRouter({
   routes: [
     {
       path: '/',
-      component: () => import('./landing-page/LandingPage.vue'),
+      component: () => import('./LandingPage.vue'),
       name: 'LandingPage',
     },
     {
       path: '/demo',
-      component: () => import('./demo/Demo.vue'),
+      component: () => import('./Demo.vue'),
       name: 'Demo',
     },
     {
       path: '/layout',
-      component: () => import('./layout/Layout.vue'),
+      component: () => import('./Layout.vue'),
       name: 'Layout',
     },
   ],
